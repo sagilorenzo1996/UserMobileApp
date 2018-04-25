@@ -1,0 +1,33 @@
+<ion-header>
+    <!-- <ion-navbar color="primary">
+      <div class="headertitle">
+        <ion-title>Login Page</ion-title>
+      </div>
+    </ion-navbar> -->
+  </ion-header>
+  
+  <ion-content>
+    <div style="height:12%;"></div>
+   <div class="new">
+      <img class="circle-pic" src="assets/imgs/Student-login-icon.png" />
+    </div>
+      
+    <ion-list>  
+      <ion-item> 
+          <ion-input  type="text" [(ngModel)]="username" placeholder="Username"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+          <ion-input type="password" [(ngModel)]="password" placeholder="Password"></ion-input>
+      </ion-item>  
+    </ion-list>
+  
+    <div padding>
+      <button ion-button color="primary" block (click)="callPostService(username,password)">Sign In</button>
+    </div>
+  
+
+  </ion-content>
+
+
+  

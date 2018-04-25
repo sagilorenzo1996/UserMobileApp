@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color="primary">
+      <div class="headertitle">
+          <ion-title>Transaction Details</ion-title>
+        </div>
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-list>
+  <ion-item>
+    Left Icon Button
+    <button ion-button outline item-end icon-left>
+      <ion-icon name="star"></ion-icon>
+      Left Icon
+    </button>
+  </ion-item>
+</ion-list>
+
+<ion-content padding>
+    <ion-row class="row-header">
+    <ion-col>Date</ion-col>
+    <ion-col>Num</ion-col>
+    <ion-col>Debit (-)</ion-col>
+    <ion-col>Credit (+)</ion-col>
+  <!--	<ion-col>Balance</ion-col>-->
+  </ion-row>
+  <br><br>
+  <ion-row *ngFor='let currentEvent of accountlist' >
+    <ion-col>{{ currentEvent?.date}} </ion-col>
+    <ion-col>{{ currentEvent?.num}} </ion-col>	
+    <ion-col>{{ currentEvent?.withdrawal }} </ion-col>
+    <ion-col>{{ currentEvent?.deposit }} </ion-col>
+
+  </ion-row>
+</ion-content>
+

@@ -1,0 +1,24 @@
+page-home {
+    .circle-pic{
+        width:200px;
+        height:200px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .new{
+        text-align: center;
+    }
+    .headertitle{
+        text-align: center;
+    }
+  
+    ion-grid {
+        height: 100%;
+      
+        ion-row {
+          height: 33.33%;
+        }
+      }
+
+}
